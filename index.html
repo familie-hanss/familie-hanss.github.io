@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Spracherkennung...</title>
+    <title>Detecting your Language</title>
     <script>
         function redirectLanguage() {
             const userLang = navigator.language || navigator.userLanguage; 
@@ -10,20 +10,18 @@
             const langCode = userLang.substring(0, 2);
 
             if (langCode === "de") {
-                window.location.href = "";
+                window.location.href = "/de/";
             } else if (langCode === "en") {
-                window.location.href = "";
+                window.location.href = "/en/";
             } else {
-                // Fallback für alle anderen Sprachen
-                window.location.href = "";
+                window.location.href = "/en/";
             }
         }
 
-        // Führt die Funktion sofort aus
         redirectLanguage();
     </script>
 </head>
 <body>
-    <p>Falls Sie nicht automatisch weitergeleitet werden, klicken Sie bitte <a href="">hier</a>.</p>
+    <p>Falls Sie nicht automatisch weitergeleitet werden, klicken Sie bitte <a href="/en/">hier</a>.</p>
 </body>
 </html>
