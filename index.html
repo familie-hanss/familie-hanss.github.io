@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Spracherkennung...</title>
+    <script>
+        function redirectLanguage() {
+            const userLang = navigator.language || navigator.userLanguage; 
+            
+            const langCode = userLang.substring(0, 2);
+
+            if (langCode === "de") {
+                window.location.href = "";
+            } else if (langCode === "en") {
+                window.location.href = "";
+            } else {
+                // Fallback für alle anderen Sprachen
+                window.location.href = "";
+            }
+        }
+
+        // Führt die Funktion sofort aus
+        redirectLanguage();
+    </script>
+</head>
+<body>
+    <p>Falls Sie nicht automatisch weitergeleitet werden, klicken Sie bitte <a href="">hier</a>.</p>
+</body>
+</html>
